@@ -39,7 +39,7 @@ body {
   }
 
   .text-gray_gradient {
-    @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#b9b9ba] from-30% via-[#e8e8ea] via-60% to-[#a7a7a9] to-100% bg-clip-text text-transparent;
   }
 
   /* button component */
