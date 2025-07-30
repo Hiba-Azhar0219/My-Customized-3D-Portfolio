@@ -63,8 +63,8 @@ const Hero = () => {
             <Cube position={sizes.cubePosition} />
             <Rings position={sizes.ringPosition} />
           </group>
-          <ambientLight intensity={2} />
-          <directionalLight position={(20, 20, 10)} intensity={0.5} />
+          <ambientLight intensity={1} />
+          <directionalLight position={(10, 10, 10)} intensity={2} />
         </Canvas>
       </div>
     </section>
