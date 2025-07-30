@@ -7,6 +7,9 @@ import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants'
 import Target from '../components/Target'
+import ReactLogo from '../components/ReactLogo'
+import Cube from '../components/Cube'
+import Rings from '../components/Rings'
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 })
@@ -56,9 +59,12 @@ const Hero = () => {
           />
           <group>
             <Target position={sizes.targetPosition} />
+            <ReactLogo position={sizes.reactLogoPosition} />
+            <Cube position={sizes.cubePosition} />
+            <Rings position={sizes.ringPosition} />
           </group>
           <ambientLight intensity={2} />
-          <directionalLight position={(30, 30, 30)} intensity={0.5} />
+          <directionalLight position={(20, 20, 10)} intensity={0.5} />
         </Canvas>
       </div>
     </section>
