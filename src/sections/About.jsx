@@ -74,7 +74,7 @@ const About = () => {
             </div>
 
             <div>
-              <p className='grid-headtext'>I work remotely</p>
+              <p className='mt-10 grid-headtext'>I work remotely</p>
               <p className='grid-subtext'>I am open to remote work</p>
 
               <Button name='Contact me' isBeam containerClass='w-full mt-10' />
@@ -113,6 +113,9 @@ const About = () => {
                   src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'}
                   alt='copy'
                 />
+                <p className='text-gray_gradient lg:text-2xl md:text-xl font-medium'>
+                  hiba.officialwork@gmail.com
+                </p>
               </div>
             </div>
           </div>
