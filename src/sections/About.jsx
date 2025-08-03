@@ -1,5 +1,4 @@
 import Globe from 'react-globe.gl'
-import { temp } from 'three/tsl'
 import Button from '../components/Button'
 import { useState } from 'react'
 
