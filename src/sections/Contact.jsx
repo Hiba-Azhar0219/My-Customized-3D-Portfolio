@@ -45,8 +45,8 @@ const Contact = () => {
           alt='terminal window'
           className='absolute inset-0 min-h-screen'
         />
-        <div className='contact-container'>
-          <h3 className='head-text'>Contact Me</h3>
+        <div className='contact-container' id='contact'>
+          <h3 className='head-text mt-10'>Contact Me</h3>
           <p className='text-lg text-white-600 mt-3'>
             Whether you are looking to build a website or improve exsiting
             platform, bring a unique project to life, I'm here to help

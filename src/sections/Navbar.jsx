@@ -6,13 +6,7 @@ const NavItems = () => {
     <ul className='nav-ul'>
       {navLinks.map(({ id, href, name }) => (
         <li key={id} className='nav-li'>
-          <a
-            href={href}
-            className='nav-li_a'
-            onClick={() => {
-              console.log('clicked')
-            }}
-          >
+          <a href={href} className='nav-li_a' onClick={() => {}}>
             {name}
           </a>
         </li>

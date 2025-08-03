@@ -9,8 +9,8 @@ const ReactLogo = (props) => {
           geometry={nodes['React-Logo_Material002_0'].geometry}
           material={materials['Material.002']}
           position={[0, 0.079, 0.181]}
-          rotation={[0.1, 0.2, -Math.PI / 2]}
-          scale={[0.39, 0.39, 0.5]}
+          rotation={[0.1, 0.1, -Math.PI / 2]}
+          scale={[0.29, 0.29, 0.4]}
         />
       </group>
     </Float>

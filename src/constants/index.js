@@ -264,13 +264,20 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       : isTablet
       ? [5, 4, 0]
       : [12, 3, 0],
+    // ringPosition: isSmall
+    //   ? [-5, 7, 0]
+    //   : isMobile
+    //   ? [-10, 10, 0]
+    //   : isTablet
+    //   ? [-12, 10, 0]
+    //   : [-24, 10, 0],
     ringPosition: isSmall
-      ? [-5, 7, 0]
+      ? [-8, 10, 0] // more left & up
       : isMobile
-      ? [-10, 10, 0]
+      ? [-13, 13, 0]
       : isTablet
-      ? [-12, 10, 0]
-      : [-24, 10, 0],
+      ? [-15, 13, 0]
+      : [-27, 13, 0],
     targetPosition: isSmall
       ? [-5, -10, -10]
       : isMobile

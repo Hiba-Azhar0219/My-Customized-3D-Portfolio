@@ -1,5 +1,9 @@
 import { Canvas } from '@react-three/fiber'
 import { workExperiences } from '../constants'
+import { OrbitControls } from '@react-three/drei'
+import { Suspense } from 'react'
+import CanvasLoader from '../components/CanvasLoader'
+import Developer from '../components/Developer'
 const Experiences = () => {
   return (
     <section className='c-space my-20'>
@@ -7,7 +11,15 @@ const Experiences = () => {
         <h3 className='head-text'>My Work Experience</h3>
         <div className='work-container'>
           <div className='work-canvas'>
-            <Canvas></Canvas>
+            <Canvas>
+              <ambientLight intensity={7} />
+              <spotLight position={[10, 10, 10]} angle={0.15} penubra={1} />
+              <directionalLight position={[20, 10, 10]} intensity={1} />
+              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
+              <Suspense fallback={<CanvasLoader />}>
+                <Developer position-y={-3} scale={3} rotation={[0, 25, 0]} />
+              </Suspense>
+            </Canvas>
           </div>
           <div className='work-content'>
             <div className='m:py-10 py-5 sm:px-5 px-2.5'>
