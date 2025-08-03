@@ -4,6 +4,7 @@ const Contact = () => {
   const formRef = useRef()
   const [loading, setLoading] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', message: '' })
+
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value })
   }
@@ -17,7 +18,7 @@ const Contact = () => {
     try {
       await emailjs.send(
         'service_2vsifcq',
-        'template_jw9hdfq',
+        'template_cyimvb9',
         {
           from_name: form.name,
           to_name: 'Hiba',
@@ -29,6 +30,7 @@ const Contact = () => {
       )
       setLoading(false)
       alert('message sent')
+      setForm({})
     } catch (error) {
       setLoading(false)
       alert('something went wrong')
@@ -71,7 +73,7 @@ const Contact = () => {
             <label className='space-y-3'>
               <span className='field-label'>Email</span>
               <input
-                type='text'
+                type='email'
                 name='email'
                 value={form.email}
                 onChange={handleChange}
@@ -82,7 +84,7 @@ const Contact = () => {
             </label>
 
             <label className='space-y-3'>
-              <span className='field-label'>You message</span>
+              <span className='field-label'>Your message</span>
               <textarea
                 name='message'
                 value={form.message}
