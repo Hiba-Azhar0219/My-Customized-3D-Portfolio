@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { myProjects } from '../constants'
+import { Canvas } from '@react-three/fiber'
 
 const projectCount = myProjects.length
 const Projects = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0)
-  const currentProject = myProjects[0]
+  const currentProject = myProjects[selectedProjectIndex]
   const handleNavigation = (direction) => {
     setSelectedProjectIndex((prevIndex) => {
       if (direction == 'previous') {
@@ -70,7 +71,7 @@ const Projects = () => {
                 >
                   <img
                     src='/assets/left-arrow.png'
-                    alt='right arrow'
+                    alt='left arrow'
                     className='w-4 h-4'
                   />
                 </button>
@@ -86,6 +87,8 @@ const Projects = () => {
                 </button>
               </div>
             </div>
+            <div className='border border-black-300 bg-black-200 roudned-lg md:h-full'></div>
+            <Canvas></Canvas>
           </div>
         </div>
       </div>
