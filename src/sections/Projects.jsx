@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import { myProjects } from '../constants'
 import { Canvas } from '@react-three/fiber'
+import { Center } from '@react-three/drei'
+import DemoComputer from '../components/DemoComputer'
 
 const projectCount = myProjects.length
 const Projects = () => {
@@ -88,7 +90,21 @@ const Projects = () => {
               </div>
             </div>
             <div className='border border-black-300 bg-black-200 roudned-lg md:h-full'></div>
-            <Canvas></Canvas>
+            <Canvas>
+              <ambieLightLight intensity={1} />
+              <direcrionalLight position={[10, 10, 5]} />
+              <Center>
+                <Suspense fallback={<CanvasLoader />}>
+                  <group
+                    scale={2}
+                    position={[0, -3, 0]}
+                    rotation={(0, -0.1, 0)}
+                  >
+                    <DemoComputer />
+                  </group>
+                </Suspense>
+              </Center>
+            </Canvas>
           </div>
         </div>
       </div>
