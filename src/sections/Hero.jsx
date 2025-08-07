@@ -26,11 +26,13 @@ const Hero = () => {
           Hi, I am Hiba<span className='waving-hand'>👋</span>
         </p>
         <p className='hero_tag text-gray_gradient'>
-          Building Products & Brands
+          Software Engineer | Full-Stack Developer | UX/UI Designer
         </p>
       </div>
-      <div className='w-full h-full absolute inset-0'>
+      <div className='w-full h-full absolute inset-0 pt-10'>
         <Canvas className='w-full h-full'>
+          <ambientLight intensity={2} />
+          <directionalLight position={[10, 5, 10]} />{' '}
           <Suspense fallback={<CanvasLoader />} />
           <PerspectiveCamera makeDefault position={[0, 0, 20]} />
           <HeroCamera isMobile={isMobile}>
@@ -40,7 +42,6 @@ const Hero = () => {
               rotation={[0, -Math.PI, 0]}
             />
           </HeroCamera>
-
           <group>
             <Target position={sizes.targetPosition} />
             <ReactLogo position={sizes.reactLogoPosition} />
