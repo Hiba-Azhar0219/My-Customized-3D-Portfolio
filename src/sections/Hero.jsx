@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants'
 import Target from '../components/Target'
 import ReactLogo from '../components/ReactLogo'
-import Cube from '../components/Cube'
+import Laptop from '../components/Laptop'
 import HeroCamera from '../components/HeroCamera'
 import Button from '../components/Button'
 import ThreeLogo from '../components/ThreeLogo'
@@ -44,11 +44,11 @@ const Hero = () => {
           <group>
             <Target position={sizes.targetPosition} />
             <ReactLogo position={sizes.reactLogoPosition} />
-            <Cube position={sizes.cubePosition} />
+            <Laptop position={sizes.laptopPosition} />
             <ThreeLogo position={[-10, 1, 0]} />
           </group>
           <ambientLight intensity={1} />
-          <directionalLight position={(10, 10, 10)} intensity={2} />
+          <directionalLight position={(10, 10, 0)} intensity={2} />
         </Canvas>
       </div>
       <div className='absolute bottom-7 left-0 right-0 w-full z-10 c-space'>
