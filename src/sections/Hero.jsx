@@ -3,15 +3,14 @@ import { Canvas } from '@react-three/fiber'
 import HackerRoom from '../components/HackerRoom'
 import { Suspense } from 'react'
 import CanvasLoader from '../components/CanvasLoader'
-import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from '../constants'
 import Target from '../components/Target'
 import ReactLogo from '../components/ReactLogo'
 import Cube from '../components/Cube'
-import Rings from '../components/Rings'
 import HeroCamera from '../components/HeroCamera'
 import Button from '../components/Button'
+import ThreeLogo from '../components/ThreeLogo'
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 })
@@ -46,7 +45,7 @@ const Hero = () => {
             <Target position={sizes.targetPosition} />
             <ReactLogo position={sizes.reactLogoPosition} />
             <Cube position={sizes.cubePosition} />
-            <Rings position={sizes.ringPosition} />
+            <ThreeLogo position={[-10, 1, 0]} />
           </group>
           <ambientLight intensity={1} />
           <directionalLight position={(10, 10, 10)} intensity={2} />
