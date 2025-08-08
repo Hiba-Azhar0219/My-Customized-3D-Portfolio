@@ -214,7 +214,7 @@ export const myProjects = [
     desc: 'Flappy Bird is a fun and addictive desktop game where a tiny bird fights gravity with every tap. Players must keep the bird airborne while skillfully navigating it through narrow gaps between pipes—one wrong move and it’s game over.',
     subdesc:
       'Developed using Java, JavaFX, and Swing, Flappy Bird combines engaging gameplay with solid programming fundamentals like GUI development, data structures, and object-oriented design, resulting in a smooth, responsive, and visually appealing game.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+    href: 'https://github.com/Hiba-Azhar0219/FlappyBird-game-using-java',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
