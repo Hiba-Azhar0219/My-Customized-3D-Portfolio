@@ -72,10 +72,10 @@ const About = () => {
 
             <div>
               <p className='mt-10 grid-headtext'>I can work remotely</p>
-              <p className='grid-subtext'>I am open to remote work</p>
+              {/* <p className='grid-subtext'>I am open to remote work</p> */}
 
-              <div className=' w-full mt-7 text-white-600 font-bold text-center'>
-                Access portfolios
+              <div className=' w-full mt-2 text-white-600 font-semibold'>
+                Access portfolios:
               </div>
               <a
                 href='https://www.linkedin.com/in/hiba-azhar-a86798317/'
@@ -90,6 +90,16 @@ const About = () => {
               <a href='https://github.com/Hiba-Azhar0219/' target='_blank'>
                 <Button
                   name='Github'
+                  isBeam
+                  containerClass='w-full mt-3 font-semibold'
+                />
+              </a>
+              <a
+                href='https://www.upwork.com/freelancers/~0169ad4585e7f01aa0?mp_source=share'
+                target='_blank'
+              >
+                <Button
+                  name='Upwork'
                   isBeam
                   containerClass='w-full mt-3 font-semibold'
                 />
@@ -119,8 +129,14 @@ const About = () => {
             <div>
               <p className='grid-headtext'>My passion for coding</p>
               <p className='grid-subtext'>
-                I love solving problems and building solutions through code. It
-                is my passion + profession
+                🌱 My passion for coding is like sunlight to a seed — it fuels
+                growth, sparks creativity 🌞, and helps me bloom 🌸 into a
+                better developer with every keystroke ⌨️. Like rivers carve
+                valleys 🌊 and stars light the night 🌟, coding lets my ideas
+                take shape and shine through every challenge I solve 💡.
+              </p>
+              <p className='text-right italic mt-2 font-sans text-white-700'>
+                ~ A Nature Lover
               </p>
             </div>
           </div>
