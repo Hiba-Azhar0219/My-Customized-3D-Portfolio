@@ -28,7 +28,7 @@ export const clientReviews = [
     position: 'Marketing Director at GreenLeaf',
     img: 'assets/review1.png',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      'Working with Hiba was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const clientReviews = [
     position: 'Founder of TechGear Shop',
     img: 'assets/review2.png',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      'Hiba’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const clientReviews = [
     position: 'Project Manager at UrbanTech ',
     img: 'assets/review3.png',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'I can’t say enough good things about Hiba. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
   },
   {
     id: 4,
@@ -52,18 +52,57 @@ export const clientReviews = [
     position: 'CEO of BrightStar Enterprises',
     img: 'assets/review4.png',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'Hiba was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
   },
 ]
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'Fid-Duniya - A Static Website',
+    desc: 'Fid-Duniya Wal-Akhirah is a spiritually enriching static web platform that brings together key Islamic resources in one place. Featuring Tafseer, Seerat, a Salah tracker, and a personal planner, it empowers users to deepen their faith and organize their daily spiritual routines.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      'Developed as a dynamic static website using Next.js, Tailwind CSS, and integrated with Google Maps, Fid-Duniya Wal-Akhirah is thoughtfully designed for seamless navigation and performance.',
+    href: 'https://responsive-deployable-fid-duniya.vercel.app/',
     texture: '/textures/project/project1.mp4',
+    logo: '/assets/project-logo3.png',
+    logoStyle: {
+      backgroundColor: '#60f5a1',
+      background:
+        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      border: '0.2px solid rgba(208, 213, 221, 1)',
+      boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
+    },
+    spotlight: '/assets/spotlight3.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Framer Motion',
+        path: '/assets/framer.png',
+      },
+    ],
+  },
+  {
+    title: 'Space Invaders - Classic Arcade Galactic Defense Game',
+    desc: 'Space Invaders is an engaging arcade-style desktop game where a tiny spaceship defends itself from waves of alien invaders. Players control the ship using arrow keys for movement and the spacebar to fire bullets, earning points and unlocking bonuses as levels progress.',
+    subdesc:
+      'Built using Java, JavaFX, and Swing, the game incorporates core computer science principles, including data structures, modular programming, and object-oriented design, ensuring clean, efficient, and scalable code architecture.',
+    href: 'https://github.com/Hiba-Azhar0219/SpaceInvader-using-java',
+    texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -71,6 +110,7 @@ export const myProjects = [
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
     spotlight: '/assets/spotlight1.png',
+
     tags: [
       {
         id: 1,
@@ -95,12 +135,12 @@ export const myProjects = [
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: '3D Devscape – A Personalized Interactive Portfolio',
+    desc: 'This interactive 3D portfolio designed to elevate hiring potential by 3x, offering a high-impact experience for recruiters and clients. Features distinct sections for services, experience, projects, client reviews, and a real-time contact form for collaboration opportunities. Combined with intuitive 3D navigation, creates a professional impression that’s HARD TO OVERLOOK.',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
+      'Using Vite.js for blazing-fast development, Tailwind CSS, utility-first styling. The 3D object rendering using react-three/fiber, @react/drei simplifying and OrbitControls enabling smooth camera interaction. React Spring for UI with fluid animations and EmailJS handles real-time messaging. Extensive JavaScript logic manages interactivity, navigation, and rendering across the portfolio. ',
+    href: 'https://my-customized-3d-portfolio.vercel.app/',
+    texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
       backgroundColor: '#13202F',
@@ -108,6 +148,7 @@ export const myProjects = [
       boxShadow: '0px 0px 60px 0px #2F6DB54D',
     },
     spotlight: '/assets/spotlight2.png',
+
     tags: [
       {
         id: 1,
@@ -132,10 +173,47 @@ export const myProjects = [
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'Netflix Pakistan Clone – A Pixel-Perfect Front-End Showcase',
+    desc: 'Netflix Pakistan Clone is a fully responsive landing page that replicates the sleek design of Netflix’s official site. Crafted with HTML5 and CSS3, the clone ensures a pixel-perfect layout across devices, capturing the essence of the original interface.',
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
+      'Developed using modern front-end techniques like Flexbox, CSS Grid, and media queries, the project showcases advanced styling features such as gradients, shadows, transitions, and overlays—sharpening both design precision and responsive web development skills.',
+    href: 'https://github.com/Hiba-Azhar0219/Netflix-Clone-WD-P9',
+    texture: '/textures/project/project4.mp4',
+    logo: '/assets/project-logo4.png',
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0px 0px 60px 0px #2F67B64D',
+    },
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Framer Motion',
+        path: '/assets/framer.png',
+      },
+    ],
+  },
+  {
+    title: 'Flappy Bird – Timing, Taps, and Java Magic',
+    desc: 'Flappy Bird is a fun and addictive desktop game where a tiny bird fights gravity with every tap. Players must keep the bird airborne while skillfully navigating it through narrow gaps between pipes—one wrong move and it’s game over.',
+    subdesc:
+      'Developed using Java, JavaFX, and Swing, Flappy Bird combines engaging gameplay with solid programming fundamentals like GUI development, data structures, and object-oriented design, resulting in a smooth, responsive, and visually appealing game.',
     href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
@@ -170,49 +248,13 @@ export const myProjects = [
       },
     ],
   },
+
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'ScrapePad – A Lightweight Web Scraping Tool Built in Java',
+    desc: 'Web Scraping Notepad is a feature-rich desktop application that combines the core functionality of a traditional notepad with intelligent web scraping capabilities. Users can enter a URL into the text area to automatically extract and display the page title and all embedded links.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
-    logoStyle: {
-      backgroundColor: '#0E1F38',
-      border: '0.2px solid #0E2D58',
-      boxShadow: '0px 0px 60px 0px #2F67B64D',
-    },
-    spotlight: '/assets/spotlight4.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+      'Developed in Java with a GUI built using Swing and JavaFX, the application also supports theme customization, font styling, undo/redo, and file formatting. The project showcases modular design, object-oriented principles, and efficient data handling techniques.',
+    href: 'https://github.com/Hiba-Azhar0219/A-WebScrapingNotepad-using-java',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
     logoStyle: {
@@ -260,16 +302,16 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     reactLogoPosition: isSmall
       ? [3, 4, 0]
       : isMobile
-      ? [5, 4, 0]
+      ? [10, 4, 0]
       : isTablet
-      ? [5, 4, 0]
+      ? [10, 4, 0]
       : [12, 3, 0],
     threeLogoPosition: isSmall
       ? [-12, 0, 0]
       : isMobile
-      ? [-17, 5, 0]
+      ? [16, 5, 0]
       : isTablet
-      ? [-19, 4, 0]
+      ? [15, 8, 1]
       : [-31, 4, 0],
 
     targetPosition: isSmall
@@ -277,7 +319,7 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       : isMobile
       ? [-9, -8, -10] // ↓ from -10 to -12
       : isTablet
-      ? [-11, -6, -10] // ↓ from -7 to -9
+      ? [-7, -6, -1] // ↓ from -7 to -9
       : [-13, -10, -10], // ↓ from -13 to -15
   }
 }

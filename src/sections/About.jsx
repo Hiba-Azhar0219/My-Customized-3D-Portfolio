@@ -36,7 +36,7 @@ const About = () => {
             <img
               src='/assets/grid2.png'
               alt='grid-2'
-              className='w-full sm:w-[276px] h-fit object-contain'
+              className='w-full sm:h-[276px] h-fit object-contain'
             />
             <div>
               <p className='grid-headtext'>Tech Stack </p>
@@ -55,28 +55,55 @@ const About = () => {
                 height={326}
                 width={326}
                 backgroundColor='rgba(0,0,0,0)'
-                backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
                 globeImageUrl='//unpkg.com/three-globe/example/img/earth-night.jpg'
-                bumpImageUrl='//unpkg.com/three-globe/example/img/earth-topology.png'
                 labelsData={[
                   {
                     lat: 33.6,
                     lng: 73,
                     text: 'I am here!',
                     color: 'white',
-                    size: 500,
+                    size: '20',
                   },
                 ]}
               />
             </div>
 
             <div>
-              <p className='mt-10 grid-headtext'>I work remotely</p>
+              <p className='mt-10 grid-headtext'>I can work remotely</p>
               <p className='grid-subtext'>I am open to remote work</p>
 
-              <Button name='Contact me' isBeam containerClass='w-full mt-10' />
+              <div className=' w-full mt-7 text-white-600 font-bold text-center'>
+                Access portfolios
+              </div>
+              <a
+                href='https://www.linkedin.com/in/hiba-azhar-a86798317/'
+                target='_blank'
+              >
+                <Button
+                  name='LinkedIn'
+                  isBeam
+                  containerClass='w-full mt-5 font-semibold'
+                />
+              </a>
+              <a href='https://github.com/Hiba-Azhar0219/' target='_blank'>
+                <Button
+                  name='Github'
+                  isBeam
+                  containerClass='w-full mt-3 font-semibold'
+                />
+              </a>
+
+              <a
+                href='https://drive.google.com/file/d/1gVmv_14MS-S1zf4QzPWRl2MrKMLIKRkg/view?usp=sharing'
+                target='_blank'
+              >
+                <Button
+                  name='Download CV'
+                  containerClass='w-full mt-3 font-semibold border border-solid border-white-2'
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -112,7 +139,7 @@ const About = () => {
                   src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'}
                   alt='copy'
                 />
-                <p className='text-gray_gradient lg:text-2xl md:text-xl font-medium'>
+                <p className='text-gray_gradient lg:text-xl md:text-xl font-medium'>
                   hiba.officialwork@gmail.com
                 </p>
               </div>

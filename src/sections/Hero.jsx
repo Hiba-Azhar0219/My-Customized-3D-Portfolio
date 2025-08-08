@@ -32,21 +32,22 @@ const Hero = () => {
         <Canvas className='w-full h-full'>
           <ambientLight intensity={2} />
           <directionalLight position={[10, 5, 10]} />{' '}
-          <Suspense fallback={<CanvasLoader />} />
-          <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-          <HeroCamera isMobile={isMobile}>
-            <HackerRoom
-              scale={sizes.deskScale}
-              position={sizes.deskPosition}
-              rotation={[0, -Math.PI, 0]}
-            />
-          </HeroCamera>
-          <group>
-            <Target position={sizes.targetPosition} />
-            <ReactLogo position={sizes.reactLogoPosition} />
-            <Laptop position={sizes.laptopPosition} />
-            <ThreeLogo position={[-10, 1, 0]} />
-          </group>
+          <Suspense fallback={<CanvasLoader />}>
+            <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                scale={sizes.deskScale}
+                position={sizes.deskPosition}
+                rotation={[0, -Math.PI, 0]}
+              />
+            </HeroCamera>
+            <group>
+              <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Laptop position={sizes.laptopPosition} />
+              <ThreeLogo position={[-10, 1, 0]} />
+            </group>
+          </Suspense>
           <ambientLight intensity={1} />
           <directionalLight position={(10, 10, 0)} intensity={2} />
         </Canvas>

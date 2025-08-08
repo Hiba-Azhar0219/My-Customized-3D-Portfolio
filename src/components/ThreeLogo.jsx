@@ -26,7 +26,7 @@ const ThreeLogo = (props) => {
       })
   })
   return (
-    <Float floatIntensity={5}>
+    <Float floatIntensity={2}>
       <group {...props}>
         <mesh
           geometry={nodes.Object_5.geometry}
