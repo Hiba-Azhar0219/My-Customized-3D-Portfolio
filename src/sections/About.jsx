@@ -106,7 +106,7 @@ const About = () => {
               </a>
 
               <a
-                href='https://drive.google.com/file/d/1gVmv_14MS-S1zf4QzPWRl2MrKMLIKRkg/view?usp=sharing'
+                href='https://drive.google.com/file/d/1KTfiN4rA61mmazEhtLO2E6PdGQMT1o_8/view?usp=sharing'
                 target='_blank'
               >
                 <Button
